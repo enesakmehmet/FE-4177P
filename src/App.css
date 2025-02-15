@@ -1,0 +1,83 @@
+
+.container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  
+  .col {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .col h4 {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #007bff;
+  }
+  
+  
+  .card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card-text {
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  
+  .dragging {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+  
+
+  .droppable-hover {
+    background-color: #e3f2fd;
+    border: 2px dashed #007bff;
+  }
+  
+
+  .card[data-status="To Do"] {
+    border-left: 5px solid #dc3545;
+    background-color: #ffe5e5;
+  }
+  
+  .card[data-status="In Progress"] {
+    border-left: 5px solid #ffc107;
+    background-color: #fff3cd;
+  }
+  
+  .card[data-status="Done"] {
+    border-left: 5px solid #28a745;
+    background-color: #d4edda;
+  }
+  
